@@ -1,13 +1,133 @@
+/* General styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+  margin: 0;
+  padding: 0;
+}
+
 #main {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 50px;
 }
 
+h2 {
+  color: #333;
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+/* Form styles */
+form {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+input[type='text'] {
+  padding: 10px;
+  font-size: 1em;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+  width: 250px;
+  margin-right: 10px;
+  transition: border 0.3s;
+}
+
+input[type='text']:focus {
+  border: 2px solid #333;
+}
+
+input[type='submit'] {
+  padding: 10px 15px;
+  font-size: 1em;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+input[type='submit']:hover {
+  background-color: #0056b3;
+}
+
+/* Container styles */
 #github-container {
   display: flex;
+  justify-content: center;
+  width: 100%;
 }
 
 ul {
   list-style: none;
+  padding: 0;
+}
+
+#user-list,
+#repos-list {
+  margin: 0 20px;
+  width: 45%;
+}
+
+/* User and repo list styles */
+.user-card,
+.repo-card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 15px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s;
+}
+
+.user-card:hover,
+.repo-card:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.user-card img {
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.user-card h3,
+.repo-card h3 {
+  margin: 0;
+  color: #007bff;
+}
+
+.user-card p,
+.repo-card p {
+  margin: 5px 0;
+  color: #555;
+}
+
+.user-card a,
+.repo-card a {
+  text-decoration: none;
+  color: #007bff;
+}
+
+.user-card a:hover,
+.repo-card a:hover {
+  text-decoration: underline;
+}
+
+button {
+  padding: 10px;
+  background-color: #28a745;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #218838;
 }
