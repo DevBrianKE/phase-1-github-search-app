@@ -14,6 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
   
+    
     // Function to search for users by query
     function searchUsers(query) {
       fetch(`https://api.github.com/search/users?q=${query}`, {
